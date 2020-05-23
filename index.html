@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Coronavirus Data</title>
+<meta name="generator" content="WYSIWYG Web Builder 15 Trial Version - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="base/jquery-ui.min.css" rel="stylesheet">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="Untitled2.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="transition.min.js"></script>
+<script src="collapse.min.js"></script>
+<script src="dropdown.min.js"></script>
+<script src="wwb15.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#wb_Heading1').addClass('visibility-hidden');
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $(document).on('click','.ThemeableMenu1-navbar-collapse.in',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+   $("a[href*='#intro']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#intro').offset().top }, 600, 'easeOutQuad');
+   });
+   function onScrollHeading1()
+   {
+      var $obj = $("#wb_Heading1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Heading1', 'vanish-in', 100, 1000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Heading1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Heading1').inViewPort(true))
+   {
+      $('#wb_Heading1').addClass("in-viewport");
+   }
+   onScrollHeading1();
+   $(window).scroll(function(event)
+   {
+      onScrollHeading1();
+   });
+   $("#Tabs1").tabs(
+   {
+      show: false,
+      hide: false,
+      event: 'click',
+      collapsible: false
+   });
+   $("#Tabs2").tabs(
+   {
+      show: false,
+      hide: false,
+      event: 'click',
+      collapsible: false
+   });
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   // move arrow outside the layer container
+   $('#wb_down-arrow').appendTo('#intro');
+});
+</script>
+</head>
+<body>
+<a href="http://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb15.png" alt="WYSIWYG Web Builder" style="position:absolute;left:290px;top:39px;margin: 0;border-width:0;z-index:250"></a>
+<div id="Tabs1" style="position:absolute;left:0px;top:852px;width:919px;height:1978px;z-index:8;">
+<ul>
+<li><a href="#tabs1-page-0"><span>Worldwide</span></a></li>
+<li><a href="#tabs1-page-1"><span>United States</span></a></li>
+<li><a href="#tabs1-page-2"><span>Canada</span></a></li>
+<li><a href="#tabs1-page-3"><span>Mexico</span></a></li>
+</ul>
+<div style="height:1978px;" id="tabs1-page-0">
+</div>
+<div style="height:1978px;" id="tabs1-page-1">
+<div id="Tabs2" style="position:absolute;left:-2px;top:7px;width:678px;height:644px;z-index:6;">
+<ul>
+<li><a href="#tabs2-page-0"><span>Nationwide</span></a></li>
+<li><a href="#tabs2-page-1"><span>Alabama</span></a></li>
+<li><a href="#tabs2-page-2"><span>Alaska</span></a></li>
+<li><a href="#tabs2-page-3"><span>American Samoa</span></a></li>
+<li><a href="#tabs2-page-4"><span>Arizona</span></a></li>
+<li><a href="#tabs2-page-5"><span>Arkansas</span></a></li>
+<li><a href="#tabs2-page-6"><span>California</span></a></li>
+<li><a href="#tabs2-page-7"><span>Colorado</span></a></li>
+<li><a href="#tabs2-page-8"><span>Connecticut</span></a></li>
+<li><a href="#tabs2-page-9"><span>Delaware</span></a></li>
+<li><a href="#tabs2-page-10"><span>Diamond Princess</span></a></li>
+<li><a href="#tabs2-page-11"><span>District of Columbia</span></a></li>
+<li><a href="#tabs2-page-12"><span>Florida</span></a></li>
+<li><a href="#tabs2-page-13"><span>Georgia</span></a></li>
+</ul>
+<div style="height:644px;" id="tabs2-page-0">
+</div>
+<div style="height:644px;" id="tabs2-page-1">
+</div>
+<div style="height:644px;" id="tabs2-page-2">
+</div>
+<div style="height:644px;" id="tabs2-page-3">
+</div>
+<div style="height:644px;" id="tabs2-page-4">
+</div>
+<div style="height:644px;" id="tabs2-page-5">
+</div>
+<div style="height:644px;" id="tabs2-page-6">
+</div>
+<div style="height:644px;" id="tabs2-page-7">
+</div>
+<div style="height:644px;" id="tabs2-page-8">
+</div>
+<div style="height:644px;" id="tabs2-page-9">
+</div>
+<div style="height:644px;" id="tabs2-page-10">
+</div>
+<div style="height:644px;" id="tabs2-page-11">
+</div>
+<div style="height:644px;" id="tabs2-page-12">
+</div>
+<div style="height:644px;" id="tabs2-page-13">
+</div>
+</div>
+</div>
+<div style="height:1978px;" id="tabs1-page-2">
+</div>
+<div style="height:1978px;" id="tabs1-page-3">
+</div>
+</div>
+<div id="wb_Text2" style="position:absolute;left:23px;top:820px;width:892px;height:15px;z-index:9;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Source: Johns Hopkins University</span></div>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_Breadcrumb1" style="display:inline-block;width:100%;z-index:0;vertical-align:top;">
+<ul id="Breadcrumb1">
+<li class="active" aria-current="page">Coronavirus Data</li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:1001;">
+<div id="ThemeableMenu1" class="ThemeableMenu1" style ="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ThemeableMenu1-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="ThemeableMenu1-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="">
+<a href="./index.html#home">Home</a>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="./index.html#services1">Service #1</a></li>
+<li><a href="./index.html#services1">Service #2</a></li>
+<li><a href="./index.html#services2">Service #3</a></li>
+<li><a href="./index.html#services2">Service #4</a></li>
+</ul>
+</li>
+<li class="">
+<a href="./index.html#portfolio">Portfolio</a>
+</li>
+<li class="">
+<a href="./index.html#about">About</a>
+</li>
+<li class="">
+<a href="./index.html#contact">Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="intro" style="position:relative;text-align:center;width:100%;height:100%;float:left;display:block;z-index:10;">
+<div id="intro-overlay"></div>
+<div id="intro_Container" style="width:970px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_Heading1" style="position:absolute;left:168px;top:208px;width:618px;height:57px;z-index:2;">
+<h1 id="Heading1">Coronavirus Data</h1></div>
+<div id="wb_down-arrow" style="position:absolute;left:460px;top:630px;width:36px;height:36px;text-align:center;z-index:3;">
+<a href="#services"><div id="down-arrow"><i class="fa fa-angle-down"></i></div></a></div>
+
+<div id="wb_Text1" style="position:absolute;left:220px;top:276px;width:515px;height:21px;text-align:center;z-index:5;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:19px;"><em>This is current confirmed Coronavirus cases and deaths.</em></span></div>
+</div>
+</div>
+</body>
+</html>
